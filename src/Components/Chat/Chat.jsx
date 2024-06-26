@@ -109,10 +109,9 @@ function Chat() {
                                 value={msg}
                                 onChange={(e) => setMsg(e.target.value)}
                                 onKeyPress={(e) => e.key === "Enter" ? sendMessage(e) : null}
-                                className="flex-grow border rounded-lg p-2 mr-2" placeholder="Type your message here..."
-                            />
-                               
-                                <button className="px-4 py-2 bg-blue-500 text-white rounded-lg" 
+                                className="flex-grow border rounded-lg p-1 mr-1" placeholder="Type your message here..."
+                            />                               
+                                <button className="px-2 py-2 text-sm lg:text-l bg-blue-500 text-white rounded-lg" 
                                 onClick={(e) => {
                                     e.preventDefault();
                                     sendMessage(e)
